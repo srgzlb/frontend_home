@@ -26,7 +26,7 @@ function enterFloatNumber() {
     }
 }
 
-//zadanie 1
+//Task 1
 let a = enterIntNumber();
 let b = enterIntNumber();
 let res;
@@ -43,7 +43,7 @@ else {
 alert(`Res  = ${res}`);
 
 
-//zadanie 2
+//Task 2
 let x1 = enterFloatNumber();
 let y1 = enterFloatNumber();
 
@@ -91,7 +91,7 @@ function checkThirdFigue(x, y) {
 alert(checkThirdFigue(x1,y1));
 
 
-//zadanie 3
+//Task 3
 let c = enterIntNumber();
 
 switch (c) {
@@ -120,6 +120,8 @@ switch (c) {
         alert("Число должно быть от 1 до 7")
 }
 
+//Task 4
 
-
+let m = enterIntNumber();
+alert (m%2 ===0 ? "нечетное число B" : "нечетное число A");
 
