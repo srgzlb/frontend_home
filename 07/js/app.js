@@ -47,7 +47,7 @@ alert(`Res  = ${res}`);
 let x1 = enterFloatNumber();
 let y1 = enterFloatNumber();
 
-function checkFirstFigure(x,y) {
+function checkFirstFigure(x, y) {
     if ((x + 4 - y) > 0 && y > 0 && 4 - x - y > 0) {
         return "Точка попадает в область";
     }
@@ -55,7 +55,8 @@ function checkFirstFigure(x,y) {
         return "Точка НЕ попадает в область"
     }
 }
-alert(checkFirstFigure(x1,y1));
+
+alert(checkFirstFigure(x1, y1));
 
 function checkSecondFigure(x, y) {
     if (y > 0) {
@@ -78,6 +79,7 @@ function checkSecondFigure(x, y) {
         return "Точка НЕ попадает в область";
     }
 }
+
 alert(checkSecondFigure(x1, y1));
 
 function checkThirdFigue(x, y) {
@@ -88,7 +90,8 @@ function checkThirdFigue(x, y) {
         return "Точка НЕ попадает в область";
     }
 }
-alert(checkThirdFigue(x1,y1));
+
+alert(checkThirdFigue(x1, y1));
 
 
 //Task 3
@@ -124,5 +127,80 @@ switch (c) {
 
 let m = enterIntNumber();
 let n = enterIntNumber();
-alert (m%2 ===0 ? `нечетное число ${n}` : `нечетное число ${m}`);
+alert(m % 2 === 0 ? `нечетное число ${n}` : `нечетное число ${m}`);
+
+//Lesson 8
+//Task 1
+let d = enterIntNumber();
+let e = enterIntNumber();
+alert(d > e ? `больше ${d}` : `больше ${e}`);
+
+//Task 2
+let f = enterIntNumber();
+let g = enterIntNumber();
+
+if (f > g) {
+    alert(`больше ${f}`);
+}
+else if (g < f) {
+    alert(`больше ${g}`);
+}
+else {
+    alert(`равны`);
+}
+
+//Task 3
+let flatNumber = enterIntNumber();
+if (flatNumber >= 1 && flatNumber <= 20) {
+    alert(`1 подъезд`);
+}
+else if (flatNumber >= 21 && flatNumber <= 48) {
+    alert(`2 подъезд`)
+}
+else if (flatNumber >= 49 && flatNumber <= 90) {
+    alert(`3 подъезд`)
+}
+else {
+    alert(`нема такаой`);
+}
+
+//Task 4
+let login = prompt(`Введите логин`);
+let password = prompt(`Введите пароль`);
+
+if ((login === "ivan" && password === "334455") || (login === "alex" && password === "777")
+    || (login === "petr" && password === "b5678")) {
+    alert("Добро пожаловать");
+}
+else {
+    alert("Ошибка входа");
+}
+
+//Task 5
+let age = enterIntNumber();
+
+if (2018 - age >= 16) {
+    alert("добро пожаловать");
+}
+else {
+    alert("вход воспрещен");
+}
+
+//Task 6
+let experience = enterIntNumber();
+
+if (experience > 0 && experience < 3) {
+    alert("надбавка 0%");
+}
+else if (experience >= 3 && experience < 10) {
+    alert("надбавка 10%");
+}
+else if (experience >= 10 && experience < 20) {
+    alert("надбавка 20%");
+}
+else{
+    alert("надбавка 25%");
+}
+
+
 
