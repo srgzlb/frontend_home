@@ -9,7 +9,7 @@ if (a > b) {
 }
 else if (a < b) {
     x = a - b + 2 / b * 4
-} else if (a = b) {
+} else if (a === b) {
     x = 400;
 }
 
