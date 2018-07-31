@@ -1,0 +1,32 @@
+h1 {
+    color:blue;
+}
+h2{
+    color:green;
+}
+h3{
+    color:pink;
+}
+p{
+    color:black;
+}
+img{
+    width:30px;
+    height:30px;
+    margin:0 10px;
+}
+.form{
+    display: flex;
+    padding:20px 0;
+    margin:0 -5px;
+}
+.form input{
+    line-height:1;
+    padding:5px 10px;
+    border-radius:4px;
+    font-size:18px;
+    color:blue;
+    background:#ccc;
+    margin:0 5px;
+    outline:none;
+}
